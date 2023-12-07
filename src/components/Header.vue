@@ -6,7 +6,7 @@ import { RouterView } from "vue-router";
   <header>
     <nav class="container">
       <div class="branding">
-        <h1> <span>H3S</span>SPORT<span>.</span></h1>
+        <h1><span>H3S</span>SPORT<span>.</span></h1>
       </div>
       <ul class="nav-routes">
         <RouterLink to="/">Beranda</RouterLink>
@@ -42,18 +42,27 @@ import { RouterView } from "vue-router";
 </template>
 
 <style lang="scss" scoped>
-
 header {
-  // background-color: var(--bg) !important;
-  background-color: #1b262c;
-  // position:relative;
-  // background-color: rgba(1, 1, 1, 0.6);
+  // background-color: #1b262c;
+  background-color: rgba(1, 1, 1, 0.6);
+  // opacity: 0.5;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  left: 0;
 
+  // position:relative;
 
   nav {
     display: flex;
     align-items: center;
-    padding: 0.75rem 1% 0.1rem;
+    padding: 0.75rem 5rem 0.1rem;
+    // margin-left: 5rem;
+    max-width: none;
+    // padding-left: 5rem;
+    // padding-right: 5rem;
+    // margin-right: 1rem;
 
     .branding {
       display: flex;
