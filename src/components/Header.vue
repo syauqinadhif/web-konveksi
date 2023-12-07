@@ -11,14 +11,36 @@ import { RouterView } from "vue-router";
       <ul class="nav-routes">
         <RouterLink to="/">Beranda</RouterLink>
         <li class="dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Produk
+          </a>
+          <div class="dropdown-content" aria-labelledby="navbarDropdown">
+            <router-link to="/produk/kaos" class="dropdown-item">Kaos</router-link>
+            <router-link to="/produk/jaket" class="dropdown-item">Jaket</router-link>
+            <router-link to="/produk/kemeja" class="dropdown-item">Kemeja</router-link>
+            <router-link to="/produk/kemeja" class="dropdown-item">Polo</router-link>
+            <router-link to="/produk/kemeja" class="dropdown-item">Vest</router-link>
+            <router-link to="/produk/kemeja" class="dropdown-item">Training</router-link>
+            <router-link to="/produk/kemeja" class="dropdown-item">Apron</router-link>
+            <router-link to="/produk/kemeja" class="dropdown-item">Tote Bag</router-link>
+          </div>
+        </li>
+        <!-- <li class="dropdown">
           <router-link to="/produk" class="dropbtn">Produk</router-link>
           <div class="dropdown-content">
             <router-link to="/produk/kaos">Kaos</router-link>
             <router-link to="/produk/jaket">Jaket</router-link>
             <router-link to="/produk/kemeja">Kemeja</router-link>
           </div>
-        </li>
-        <!-- <RouterLink to="/produk">Produk</RouterLink> -->
+        </li> -->
         <RouterLink to="/about">Portofolio</RouterLink>
         <RouterLink to="/about">Harga</RouterLink>
         <RouterLink to="/about">Hubungi Kami</RouterLink>
@@ -34,7 +56,7 @@ header {
   nav {
     display: flex;
     align-items: center;
-    padding: 0.75rem 2%;
+    padding: 0.75rem 2% 0.1rem;
 
     .branding {
       display: flex;
@@ -70,23 +92,10 @@ header {
         color: #81c2e5;
       }
 
-      a::after {
-        content: " ";
-        display: block;
-        // padding-bottom: 0.5rem;
-        border-bottom: 0.1rem solid #169ee7;
-        transform: scaleX(0);
-        transition: 0.2s linear;
-      }
-
-      a:hover::after {
-        transform: scaleX(0.75);
-      }
       .dropdown {
         display: inline-block;
       }
-
-      .dropbtn {
+      .nav-link dropdown-toggle {
         text-decoration: none;
         font-size: 13px;
         font-weight: 600;
@@ -115,7 +124,7 @@ header {
 
       .dropdown-content a:hover {
         // background-color: #81c2e5;
-        color: #fff;
+        color: #81c2e5;
       }
 
       .dropdown:hover .dropdown-content {
