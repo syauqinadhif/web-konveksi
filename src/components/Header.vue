@@ -6,7 +6,7 @@ import { RouterView } from "vue-router";
   <header>
     <nav class="container">
       <div class="branding">
-        <h1>H3SSPORT</h1>
+        <h1> <span>H3S</span>SPORT<span>.</span></h1>
       </div>
       <ul class="nav-routes">
         <RouterLink to="/">Beranda</RouterLink>
@@ -33,14 +33,6 @@ import { RouterView } from "vue-router";
             <router-link to="/produk/kemeja" class="dropdown-item">Tote Bag</router-link>
           </div>
         </li>
-        <!-- <li class="dropdown">
-          <router-link to="/produk" class="dropbtn">Produk</router-link>
-          <div class="dropdown-content">
-            <router-link to="/produk/kaos">Kaos</router-link>
-            <router-link to="/produk/jaket">Jaket</router-link>
-            <router-link to="/produk/kemeja">Kemeja</router-link>
-          </div>
-        </li> -->
         <RouterLink to="/about">Portofolio</RouterLink>
         <RouterLink to="/about">Harga</RouterLink>
         <RouterLink to="/about">Hubungi Kami</RouterLink>
@@ -50,13 +42,18 @@ import { RouterView } from "vue-router";
 </template>
 
 <style lang="scss" scoped>
+
 header {
+  // background-color: var(--bg) !important;
   background-color: #1b262c;
+  // position:relative;
+  // background-color: rgba(1, 1, 1, 0.6);
+
 
   nav {
     display: flex;
     align-items: center;
-    padding: 0.75rem 2% 0.1rem;
+    padding: 0.75rem 1% 0.1rem;
 
     .branding {
       display: flex;
@@ -64,10 +61,13 @@ header {
       gap: 8px;
 
       h1 {
-        font-size: 1.4rem;
-        font-weight: 700;
+        font-size: 1.3rem;
+        font-weight: 600;
         color: #fff;
         font-style: italic;
+      }
+      span {
+        color: #82fdf7;
       }
     }
 
@@ -89,7 +89,7 @@ header {
       }
 
       a:hover {
-        color: #81c2e5;
+        color: #82fdf7;
       }
 
       .dropdown {
@@ -124,7 +124,7 @@ header {
 
       .dropdown-content a:hover {
         // background-color: #81c2e5;
-        color: #81c2e5;
+        color: #82fdf7;
       }
 
       .dropdown:hover .dropdown-content {
