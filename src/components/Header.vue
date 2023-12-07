@@ -37,6 +37,9 @@ import { RouterView } from "vue-router";
         <RouterLink to="/about">Harga</RouterLink>
         <RouterLink to="/about">Hubungi Kami</RouterLink>
       </ul>
+      <div class="navbar-extra">
+        <vue-feather type="menu" class="menu" ></vue-feather>
+      </div>
     </nav>
   </header>
 </template>
@@ -139,6 +142,12 @@ header {
       .dropdown:hover .dropdown-content {
         display: block;
       }
+    }
+    .navbar-extra .menu {
+      color: #fff;
+      margin: 0 0.5rem;
+      margin-left: auto;
+      display: none;
     }
   }
 }
