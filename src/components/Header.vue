@@ -23,7 +23,7 @@ import { RouterView } from "vue-router";
             Produk
           </a>
           <div class="dropdown-content" aria-labelledby="navbarDropdown">
-            <router-link to="/produk/kaos" class="dropdown-item">Kaos</router-link>
+            <router-link to="produkKaos" class="dropdown-item">Kaos</router-link>
             <router-link to="/produk/jaket" class="dropdown-item">Jaket</router-link>
             <router-link to="/produk/kemeja" class="dropdown-item">Kemeja</router-link>
             <router-link to="/produk/kemeja" class="dropdown-item">Polo</router-link>
@@ -38,7 +38,7 @@ import { RouterView } from "vue-router";
         <RouterLink to="/about">Hubungi Kami</RouterLink>
       </ul>
       <div class="navbar-extra">
-        <vue-feather type="menu" class="menu" ></vue-feather>
+        <vue-feather type="menu" class="menu"></vue-feather>
       </div>
     </nav>
   </header>
@@ -79,7 +79,7 @@ header {
         font-style: italic;
       }
       span {
-        color: #82fdf7;
+        color: #118fbd;
       }
     }
 
@@ -101,7 +101,7 @@ header {
       }
 
       a:hover {
-        color: #82fdf7;
+        color: #118fbd;
       }
 
       .dropdown {
@@ -121,7 +121,8 @@ header {
       .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #1b262c;
+        margin: 0rem -2rem;        
+        background-color: rgba(1, 1, 1, 0.6);
         min-width: 160px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         z-index: 1;
@@ -136,7 +137,7 @@ header {
 
       .dropdown-content a:hover {
         // background-color: #81c2e5;
-        color: #82fdf7;
+        color: #118fbd;
       }
 
       .dropdown:hover .dropdown-content {
