@@ -33,7 +33,7 @@ import { RouterView } from "vue-router";
             <router-link to="/produk/kemeja" class="dropdown-item">Tote Bag</router-link>
           </div>
         </li>
-        <RouterLink to="/about">Portofolio</RouterLink>
+        <RouterLink to="/portofolio">Portofolio</RouterLink>
         <RouterLink to="/about">Harga</RouterLink>
         <RouterLink to="/about">Hubungi Kami</RouterLink>
       </ul>
