@@ -46,9 +46,9 @@ import { RouterView } from "vue-router";
 
 <style lang="scss" scoped>
 header {
-  // background-color: #1b262c;
+  // background-color: #f8f8f8;
   background-color: rgba(1, 1, 1, 0.6);
-  // opacity: 0.5;
+  // opacity: 0.6;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -107,22 +107,12 @@ header {
       .dropdown {
         display: inline-block;
       }
-      .nav-link dropdown-toggle {
-        text-decoration: none;
-        font-size: 13px;
-        font-weight: 600;
-        color: #fff;
-        display: inline-block;
-        margin: 0 1rem;
-        position: relative;
-        margin-top: 2px;
-      }
 
       .dropdown-content {
         display: none;
-        position: absolute;
+        position: fixed;
         margin: 0rem -2rem;        
-        background-color: rgba(1, 1, 1, 0.6);
+        background-color: rgba(1, 1, 1, 0.8);
         min-width: 160px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         z-index: 1;

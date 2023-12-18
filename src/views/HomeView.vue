@@ -3,28 +3,27 @@ import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <body>
-    <!-- Hero Section  -->
-    <section class="hero" id="home">
-      <main class="content">
-        <h1>Dapatkan seragam terbaik, Penuhi kebutuhan Anda.</h1>
-        <p>Nikmati pelayanan & hasil produksi berkualitas dari H3SSPORT Konveksi.</p>
-        <a href="#" class="cta">Ayo Buat Sekarang!</a>
-      </main>
-    </section>
-    <!-- Hero End -->
-    <!-- Slogan Section -->
-    <section class="slogan" id="slogan">
-      <h1 class="sub-slogan">
-        H3S<span>SPORT</span> Konveksi Terbaik <br />
-        dengan Review Terbanyak dan Rating Tertinggi
-      </h1>
-    </section>
-    <!-- Slogan End -->
-    <!-- Figure Section -->
-    <section class="product-figure" id="product-figure">
-      <h2>Produk Terbaik Kami</h2>
-
+  <!-- Hero Section  -->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>Dapatkan seragam terbaik, Penuhi kebutuhan Anda.</h1>
+      <p>Nikmati pelayanan & hasil produksi berkualitas dari H3SSPORT Konveksi.</p>
+      <a href="#" class="cta">Ayo Buat Sekarang!</a>
+    </main>
+  </section>
+  <!-- Hero End -->
+  <!-- Slogan Section -->
+  <section class="slogan" id="slogan">
+    <h1 class="sub-slogan">
+      H3S<span>SPORT</span> Konveksi Terbaik <br />
+      dengan Review Terbanyak dan Rating Tertinggi
+    </h1>
+  </section>
+  <!-- Slogan End -->
+  <!-- Figure Section -->
+  <section class="product-figure" id="product-figure">
+    <h2>Produk Terbaik Kami</h2>
+    <div>
       <div class="row">
         <div class="figure-card">
           <img src="../assets/home/kaos.png" alt="kaos" />
@@ -59,18 +58,13 @@ import { RouterView } from "vue-router";
           <h3>Tote Bag</h3>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
 
   <!-- Figure Section End -->
 </template>
 
-<style lang="scss">
-body {
-  background-color: black;
-  min-height: 2500px;
-}
-
+<style lang="scss" scoped>
 .hero {
   min-height: 100vh;
   display: flex;
@@ -126,7 +120,7 @@ body {
 }
 
 .slogan {
-  // background-color: black;
+  background-color: black;
   padding: 5rem 7% 5rem;
 
   h1 {
@@ -160,18 +154,20 @@ body {
     flex-wrap: wrap;
     margin-top: 3rem;
     justify-content: center;
-  }
 
-  .figure-card {
-    text-align: center;
-    padding: 1rem 1%;
-
-    h3 {
-      color: black;
-      font-weight: 600;
-      font-size: 1.4rem;
+    .figure-card {
       text-align: center;
-      line-height: 1.3;
+      padding: 0rem 0rem;
+      width: 330px;
+      height: 400px;
+
+      h3 {
+        color: black;
+        font-weight: 600;
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 1.3;
+      }
     }
   }
 }
