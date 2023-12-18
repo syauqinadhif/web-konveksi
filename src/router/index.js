@@ -23,6 +23,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
+<<<<<<< HEAD
       component: () => import("../views/produk/ProdukKaos.vue"),
     },
     {
@@ -35,5 +36,19 @@ const router = createRouter({
     },
   ],
 });
+=======
+      component: () => import('../views/produk/ProdukKaos.vue')
+    },
+    {
+      path: '/produkJaket',
+      name: 'produkJaket',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/produk/ProdukJaket.vue')
+    }
+  ]
+})
+>>>>>>> 1e41f8eb5a78d15ffc0f843baf21112b97372e2c
 
 export default router;
