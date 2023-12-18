@@ -4,7 +4,7 @@
       <h1>Tentukan Desain Anda</h1>
       <div class="button">
         <a href="#modelVar" class="optionButton">Model dan Varian</a>
-        <a href="#" class="optionButton">Jenis Bahan</a>
+        <a href="#jenisBahan" class="optionButton">Jenis Bahan</a>
         <a href="#" class="optionButton">Ukuran</a>
       </div>
 
@@ -157,6 +157,15 @@ body {
   }
 
   .jenisBahan {
+    h1 {
+      margin-top: 5rem;
+      font-size: 1.75rem;
+      font-weight: 600;
+      text-align: center;
+      color: #118fbd;
+      text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+      line-height: 1.3;
+    }
     .splide {
       // width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
       width: 800px; /* Atur lebar maksimum sesuai kebutuhan */
