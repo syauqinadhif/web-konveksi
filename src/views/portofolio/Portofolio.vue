@@ -57,8 +57,8 @@
               </SplideSlide>
             </Splide>
           </div>
+          <h2>Vest</h2>
           <div class="type">
-            <h2>Vest</h2>
             <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
               <SplideSlide>
                 <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
@@ -70,8 +70,8 @@
               </SplideSlide>
             </Splide>
           </div>
+          <h2>Training</h2>
           <div class="type">
-            <h2>Training</h2>
             <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
               <SplideSlide>
                 <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
@@ -83,8 +83,8 @@
               </SplideSlide>
             </Splide>
           </div>
+          <h2>Apron</h2>
           <div class="type">
-            <h2>Apron</h2>
             <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
               <SplideSlide>
                 <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
@@ -96,8 +96,8 @@
               </SplideSlide>
             </Splide>
           </div>
+          <h2>Tote Bag</h2>
           <div class="type">
-            <h2>Tote Bag</h2>
             <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
               <SplideSlide>
                 <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
@@ -116,17 +116,19 @@
   
   <style lang="scss">
   body {
-    background-color: black;
+    background-color: rgb(41, 41, 53);
   }
   .portofolio {
     h1 {
-      margin-top: 5rem;
+      margin-top: 6rem;
+      margin-bottom: 3rem;
       font-size: 1.75rem;
       font-weight: 600;
       text-align: center;
       color: #fff;
       text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
       line-height: 1.3;
+      
     }
   
     .button {
@@ -154,11 +156,23 @@
   
     .modelVar {
       h2 {
-        // margin-right: 20px;
         color: #118fbd;
         font-size: 1.25rem;
         font-weight: 600;
         text-align: center; /* Jarak antara judul dan slider */
+
+        padding: 0.5rem 1rem;
+      text-align: center;
+      width: 12rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #118fbd;
+      // justify-content: space-between;
+      border-radius: 3rem;
+      box-shadow: 1px 1px 3px, rgba(1, 1, 3, 0.5);
+      margin: auto;
+
+        
       } /* Pusatkan elemen anak secara vertikal */
       .type {
         display: flex;
