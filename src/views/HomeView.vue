@@ -25,38 +25,38 @@ import { RouterView } from "vue-router";
     <h2>Produk Terbaik Kami</h2>
     <div>
       <div class="row">
-        <div class="figure-card">
+        <a href="produkKaos" class="figure-card">
           <img src="../assets/home/kaos.png" alt="kaos" />
           <h3>Kaos</h3>
-        </div>
-        <div class="figure-card">
+        </a>
+        <a href="produkJaket" class="figure-card">
           <img src="../assets/home/jacket.png" alt="jacket" />
           <h3>Jacket</h3>
-        </div>
-        <div class="figure-card">
+        </a>
+        <a href="produkKemeja" class="figure-card">
           <img src="../assets/home/kemeja.png" alt="kemeja" />
           <h3>Kemeja</h3>
-        </div>
-        <div class="figure-card">
+        </a>
+        <a href="produkPolo" class="figure-card">
           <img src="../assets/home/polo.png" alt="polo" />
           <h3>Polo</h3>
-        </div>
-        <div class="figure-card">
+        </a>
+        <a href="produkVest" class="figure-card">
           <img src="../assets/home/vest.png" alt="vest" />
           <h3>Vest</h3>
-        </div>
-        <div class="figure-card">
+        </a>
+        <a href="produkTraining" class="figure-card">
           <img src="../assets/home/trining.png" alt="trining" />
           <h3>Training</h3>
-        </div>
-        <div class="figure-card">
+        </a>
+        <a href="produkApron" class="figure-card">
           <img src="../assets/home/apron.png" alt="apron" />
           <h3>Apron</h3>
-        </div>
-        <div class="figure-card">
+        </a>
+        <a href="produkToteBag" class="figure-card">
           <img src="../assets/home/totebag.png" alt="totebag" />
           <h3>Tote Bag</h3>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -156,6 +156,7 @@ import { RouterView } from "vue-router";
     justify-content: center;
 
     .figure-card {
+      text-decoration: none;
       text-align: center;
       padding: 0rem 0rem;
       width: 330px;

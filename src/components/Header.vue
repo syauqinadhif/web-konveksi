@@ -25,12 +25,12 @@ import { RouterView } from "vue-router";
           <div class="dropdown-content" aria-labelledby="navbarDropdown">
             <router-link to="produkKaos" class="dropdown-item">Kaos</router-link>
             <router-link to="produkJaket" class="dropdown-item">Jaket</router-link>
-            <router-link to="/produk/kemeja" class="dropdown-item">Kemeja</router-link>
-            <router-link to="/produk/kemeja" class="dropdown-item">Polo</router-link>
-            <router-link to="/produk/kemeja" class="dropdown-item">Vest</router-link>
-            <router-link to="/produk/kemeja" class="dropdown-item">Training</router-link>
-            <router-link to="/produk/kemeja" class="dropdown-item">Apron</router-link>
-            <router-link to="/produk/kemeja" class="dropdown-item">Tote Bag</router-link>
+            <router-link to="produkKemeja" class="dropdown-item">Kemeja</router-link>
+            <router-link to="produkPolo" class="dropdown-item">Polo</router-link>
+            <router-link to="produkVest" class="dropdown-item">Vest</router-link>
+            <router-link to="produkTraining" class="dropdown-item">Training</router-link>
+            <router-link to="produkApron" class="dropdown-item">Apron</router-link>
+            <router-link to="produkToteBag" class="dropdown-item">Tote Bag</router-link>
           </div>
         </li>
         <RouterLink to="/portofolio">Portofolio</RouterLink>

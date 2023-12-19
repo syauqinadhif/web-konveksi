@@ -1,6 +1,6 @@
 <template>
   <body>
-    <section class="produkKaos">
+    <section class="produkPolo">
       <h1>Tentukan Desain Anda</h1>
       <div class="button">
         <a href="#modelVar" class="optionButton">Model dan Varian</a>
@@ -11,7 +11,7 @@
       <div class="modelVar" id="modelVar">
         <h1>Model & Varian</h1>
         <div class="type">
-          <h2>Neck/Rib Leher</h2>
+          <h2>Kerah</h2>
           <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
             <SplideSlide>
               <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
@@ -24,7 +24,7 @@
           </Splide>
         </div>
         <div class="type">
-          <h2>Lengan</h2>
+          <h2>Stol</h2>
           <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
             <SplideSlide>
               <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
@@ -37,7 +37,33 @@
           </Splide>
         </div>
         <div class="type">
-          <h2>Jahitan</h2>
+          <h2>Kancing</h2>
+          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
+            </SplideSlide>
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
+            </SplideSlide>
+          </Splide>
+        </div>
+        <div class="type">
+          <h2>Bawah Badan</h2>
+          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
+            </SplideSlide>
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
+            </SplideSlide>
+          </Splide>
+        </div>
+        <div class="type">
+          <h2>Manset</h2>
           <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
             <SplideSlide>
               <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
@@ -71,7 +97,7 @@
 body {
   background-color: black;
 }
-.produkKaos {
+.produkPolo {
   h1 {
     margin-top: 5rem;
     font-size: 1.75rem;
