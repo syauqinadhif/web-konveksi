@@ -59,6 +59,11 @@ const router = createRouter({
       name: "portofolio",
       component: () => import("../views/portofolio/Portofolio.vue"),
     },
+    {
+      path: "/pricelist",
+      name: "pricelist",
+      component: () => import("../views/harga/Harga.vue"),
+    },
   ],
 });
 

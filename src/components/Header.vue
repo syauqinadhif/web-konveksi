@@ -34,7 +34,7 @@ import { RouterView } from "vue-router";
           </div>
         </li>
         <RouterLink to="/portofolio">Portofolio</RouterLink>
-        <RouterLink to="/about">Harga</RouterLink>
+        <RouterLink to="/pricelist">Harga</RouterLink>
         <RouterLink to="/about">Hubungi Kami</RouterLink>
       </ul>
       <div class="navbar-extra">

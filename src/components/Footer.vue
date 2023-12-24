@@ -58,7 +58,7 @@ footer {
     // max-width: 600px;
     // margin: 0 auto;
     .content{
-      // display: flex;
+      display: flex;
       align-items: center;
       // text-align: center;
       // margin: 0 0;
