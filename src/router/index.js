@@ -64,6 +64,11 @@ const router = createRouter({
       name: "pricelist",
       component: () => import("../views/harga/Harga.vue"),
     },
+    {
+      path: "/hubungi",
+      name: "Hubungi Kami",
+      component: () => import("../views/hubungi/Hubungi.vue"),
+    },
   ],
 });
 

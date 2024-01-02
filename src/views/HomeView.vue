@@ -131,10 +131,12 @@ import { RouterView } from "vue-router";
     line-height: 1.3;
     color: #fff;
   }
+
   .sub-slogan span {
     color: #118fbd;
   }
 }
+
 .product-figure {
   margin: 3rem 4rem;
   padding: 3rem 2.5%;

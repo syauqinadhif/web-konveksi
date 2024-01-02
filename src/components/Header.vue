@@ -35,7 +35,7 @@ import { RouterView } from "vue-router";
         </li>
         <RouterLink to="/portofolio">Portofolio</RouterLink>
         <RouterLink to="/pricelist">Harga</RouterLink>
-        <RouterLink to="/about">Hubungi Kami</RouterLink>
+        <RouterLink to="/hubungi">Hubungi Kami</RouterLink>
       </ul>
       <div class="navbar-extra">
         <vue-feather type="menu" class="menu"></vue-feather>
