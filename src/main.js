@@ -9,8 +9,8 @@ import '@splidejs/vue-splide/css';
 import VueFeather from 'vue-feather';
 
 // const app = createApp({});
-
 import "bootstrap/dist/js/bootstrap.bundle"
+
 const app = createApp(App)
 
 app.use(router)
