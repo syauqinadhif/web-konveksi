@@ -196,6 +196,26 @@ body {
       }
     }
   }
+
+  .slogan {
+    h1 {
+      font-size: 130%;
+    }
+  }
+
+  .product-figure {
+    h2 {
+      font-size: 130%;
+    }
+
+    .row {
+      .figure-card {
+        h3 {
+          font-size: 130%;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -211,6 +231,26 @@ body {
 
       .cta {
         font-size: 75%;
+      }
+    }
+  }
+
+  .slogan {
+    h1 {
+      font-size: 110%;
+    }
+  }
+
+  .product-figure {
+    h2 {
+      font-size: 110%;
+    }
+
+    .row {
+      .figure-card {
+        h3 {
+          font-size: 110%;
+        }
       }
     }
   }
