@@ -3,68 +3,73 @@ import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <!-- Hero Section  -->
-  <section class="hero" id="home">
-    <main class="content">
-      <h1>Dapatkan seragam terbaik, Penuhi kebutuhan Anda.</h1>
-      <p>Nikmati pelayanan & hasil produksi berkualitas dari H3SSPORT Konveksi.</p>
-      <a href="#" class="cta">Ayo Buat Sekarang!</a>
-    </main>
-  </section>
-  <!-- Hero End -->
-  <!-- Slogan Section -->
-  <section class="slogan" id="slogan">
-    <h1 class="sub-slogan">
-      H3S<span>SPORT</span> Konveksi Terbaik <br />
-      dengan Review Terbanyak dan Rating Tertinggi
-    </h1>
-  </section>
-  <!-- Slogan End -->
-  <!-- Figure Section -->
-  <section class="product-figure" id="product-figure">
-    <h2>Produk Terbaik Kami</h2>
-    <div>
-      <div class="row">
-        <a href="produkKaos" class="figure-card">
-          <img src="../assets/home/kaos.png" alt="kaos" />
-          <h3>Kaos</h3>
-        </a>
-        <a href="produkJaket" class="figure-card">
-          <img src="../assets/home/jacket.png" alt="jacket" />
-          <h3>Jacket</h3>
-        </a>
-        <a href="produkKemeja" class="figure-card">
-          <img src="../assets/home/kemeja.png" alt="kemeja" />
-          <h3>Kemeja</h3>
-        </a>
-        <a href="produkPolo" class="figure-card">
-          <img src="../assets/home/polo.png" alt="polo" />
-          <h3>Polo</h3>
-        </a>
-        <a href="produkVest" class="figure-card">
-          <img src="../assets/home/vest.png" alt="vest" />
-          <h3>Vest</h3>
-        </a>
-        <a href="produkTraining" class="figure-card">
-          <img src="../assets/home/trining.png" alt="trining" />
-          <h3>Training</h3>
-        </a>
-        <a href="produkApron" class="figure-card">
-          <img src="../assets/home/apron.png" alt="apron" />
-          <h3>Apron</h3>
-        </a>
-        <a href="produkToteBag" class="figure-card">
-          <img src="../assets/home/totebag.png" alt="totebag" />
-          <h3>Tote Bag</h3>
-        </a>
+  <body>
+    <!-- Hero Section  -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Dapatkan seragam terbaik, Penuhi kebutuhan Anda.</h1>
+        <p>Nikmati pelayanan & hasil produksi berkualitas dari H3SSPORT Konveksi.</p>
+        <a href="#" class="cta">Ayo Buat Sekarang!</a>
+      </main>
+    </section>
+    <!-- Hero End -->
+    <!-- Slogan Section -->
+    <section class="slogan" id="slogan">
+      <h1 class="sub-slogan">
+        H3S<span>SPORT</span> Konveksi Terbaik <br />
+        dengan Review Terbanyak dan Rating Tertinggi
+      </h1>
+    </section>
+    <!-- Slogan End -->
+    <!-- Figure Section -->
+    <section class="product-figure" id="product-figure">
+      <h2>Produk Terbaik Kami</h2>
+      <div>
+        <div class="row">
+          <a href="produkKaos" class="figure-card">
+            <img src="../assets/home/kaos.png" alt="kaos" />
+            <h3>Kaos</h3>
+          </a>
+          <a href="produkJaket" class="figure-card">
+            <img src="../assets/home/jacket.png" alt="jacket" />
+            <h3>Jacket</h3>
+          </a>
+          <a href="produkKemeja" class="figure-card">
+            <img src="../assets/home/kemeja.png" alt="kemeja" />
+            <h3>Kemeja</h3>
+          </a>
+          <a href="produkPolo" class="figure-card">
+            <img src="../assets/home/polo.png" alt="polo" />
+            <h3>Polo</h3>
+          </a>
+          <a href="produkVest" class="figure-card">
+            <img src="../assets/home/vest.png" alt="vest" />
+            <h3>Vest</h3>
+          </a>
+          <a href="produkTraining" class="figure-card">
+            <img src="../assets/home/trining.png" alt="trining" />
+            <h3>Training</h3>
+          </a>
+          <a href="produkApron" class="figure-card">
+            <img src="../assets/home/apron.png" alt="apron" />
+            <h3>Apron</h3>
+          </a>
+          <a href="produkToteBag" class="figure-card">
+            <img src="../assets/home/totebag.png" alt="totebag" />
+            <h3>Tote Bag</h3>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Figure Section End -->
+    </section>
+    <!-- Figure Section End -->
+  </body>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
+body {
+  background-color: black !important;
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -85,6 +90,7 @@ import { RouterView } from "vue-router";
       color: #fff;
       text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
       line-height: 1.3;
+      margin-bottom: 0.5rem;
     }
 
     p {
@@ -94,6 +100,7 @@ import { RouterView } from "vue-router";
       font-weight: 300;
       color: #fff;
       text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+      margin-bottom: 0.5rem;
     }
 
     .cta {
@@ -136,7 +143,7 @@ import { RouterView } from "vue-router";
   }
 }
 .product-figure {
-  margin: 3rem 4rem;
+  margin: 3rem 3rem;
   padding: 3rem 2.5%;
   background-color: rgb(233, 233, 233);
   border-radius: 50px;
@@ -168,6 +175,42 @@ import { RouterView } from "vue-router";
         font-size: 1.4rem;
         text-align: center;
         line-height: 1.3;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    .content {
+      h1 {
+        font-size: 170%;
+      }
+
+      p {
+        font-size: 90%;
+      }
+
+      .cta {
+        font-size: 85%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    .content {
+      h1 {
+        font-size: 140%;
+      }
+
+      p {
+        font-size: 80%;
+      }
+
+      .cta {
+        font-size: 75%;
       }
     }
   }

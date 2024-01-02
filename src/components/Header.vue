@@ -60,7 +60,10 @@ header {
   nav {
     display: flex;
     align-items: center;
-    padding: 0.75rem 5rem 0.1rem;
+    padding: 0.75rem 3rem 0.1rem;
+    text-align: center;
+    // padding: 10rem 5rem 0.1rem;
+
     // margin-left: 5rem;
     max-width: none;
     // padding-left: 5rem;
@@ -71,6 +74,7 @@ header {
       display: flex;
       align-items: center;
       gap: 8px;
+      margin-bottom: 0.5rem;
 
       h1 {
         font-size: 1.3rem;
@@ -89,6 +93,7 @@ header {
       justify-content: flex-end;
       gap: 5px;
       list-style: none;
+      margin-bottom: 1rem;
       a {
         text-decoration: none;
         // color: inherit;
@@ -111,7 +116,7 @@ header {
       .dropdown-content {
         display: none;
         position: fixed;
-        margin: 0rem -2rem;        
+        margin: 0rem -3rem;
         background-color: rgba(1, 1, 1, 0.8);
         min-width: 160px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -120,8 +125,10 @@ header {
 
       .dropdown-content a {
         color: #fff;
-        padding: 12px 16px;
-        display: block;
+        padding: 12px;
+        // margin-right: 3rem;
+        margin-left: 3rem;
+        display: flex;
         text-decoration: none;
       }
 
@@ -139,6 +146,21 @@ header {
       margin: 0 0.5rem;
       margin-left: auto;
       display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    .branding{
+      font-size: 75%;
+    }
+
+    h1 {
+      font-size: 75%;
+    }
+    .navbar-extra .menu {
+      display: inline-block;
     }
   }
 }
