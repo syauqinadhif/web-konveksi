@@ -148,19 +148,23 @@ header {
       display: none;
     }
   }
-}
 
-@media (max-width: 768px) {
-  nav {
-    .branding{
-      font-size: 75%;
-    }
+  @media (max-width: 768px) {
+    nav {
+      .branding {
+        h1 {
+          font-size: 100%;
+        }
+      }
 
-    h1 {
-      font-size: 75%;
-    }
-    .navbar-extra .menu {
-      display: inline-block;
+      .nav-routes {
+        a {
+          font-size: 75%;
+        }
+      }
+      .navbar-extra .menu {
+        display: block;
+      }
     }
   }
 }

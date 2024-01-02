@@ -202,31 +202,15 @@ body {
   }
 
   .modelVar {
-    // h2 {
-      //   color: #118fbd;
-      //   font-size: 1.25rem;
-      //   font-weight: 600;
-      //   text-align: center; /* Jarak antara judul dan slider */
-
-      //   padding: 0.5rem 1rem;
-      // text-align: center;
-      // width: 12rem;
-      // font-size: 1rem;
-      // color: #fff;
-      // background-color: #118fbd;
-      // // justify-content: space-between;
-      // border-radius: 3rem;
-      // box-shadow: 1px 1px 3px, rgba(1, 1, 3, 0.5);
-      // margin: auto;
-    // } /* Pusatkan elemen anak secara vertikal */
     .type {
       height: 600px;
-      background-color: #0f3947;
+      // background-color: #0f3947;
+      background-color:  #127396;
       border-radius: 5rem;
       display: flex;
       box-shadow: 1px 1px 3px, rgba(1, 1, 3, 0.5);
       // align-items: center;
-      margin: 1rem 1rem;
+      margin: 1rem 8rem;
       justify-content: center;
       // margin-right: 0px;
 
