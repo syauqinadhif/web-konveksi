@@ -237,7 +237,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .produkKaos {
+  .produkJaket {
     h1 {
       font-size: 130%;
       text-align: center;

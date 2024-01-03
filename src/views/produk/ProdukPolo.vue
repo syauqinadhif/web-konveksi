@@ -211,7 +211,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .produkKaos {
+  .produkPolo {
     h1 {
       font-size: 130%;
       text-align: center;

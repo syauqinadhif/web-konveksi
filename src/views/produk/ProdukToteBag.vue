@@ -1,6 +1,6 @@
 <template>
   <body>
-    <section class="produkKaos">
+    <section class="produkToteBag">
       <h1>Tentukan Desain Anda</h1>
       <div class="button">
         <a href="#modelVar" class="optionButton">Model dan Varian</a>
@@ -71,7 +71,7 @@
 body {
   background-color: black;
 }
-.produkKaos {
+.produkToteBag {
   h1 {
     margin-top: 5rem;
     font-size: 1.75rem;
@@ -185,7 +185,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .produkKaos {
+  .produkToteBag {
     h1 {
       font-size: 130%;
       text-align: center;

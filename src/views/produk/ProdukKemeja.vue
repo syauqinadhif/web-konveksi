@@ -224,7 +224,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .produkKaos {
+  .produkKemeja {
     h1 {
       font-size: 130%;
       text-align: center;
