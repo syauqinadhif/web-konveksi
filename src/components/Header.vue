@@ -1,6 +1,6 @@
 <script setup>
 import { RouterView } from "vue-router";
-import { ref, onMounted } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 
 const isNavRoutesActive = ref(false);
 
@@ -74,9 +74,6 @@ header {
   // opacity: 0.6;
   position: fixed;
   z-index: 99;
-  top: 0;
-  right: 0;
-  left: 0;
 
   // position:relative;
 
@@ -85,16 +82,9 @@ header {
     align-items: center;
     padding: 0.75rem 3rem 0.1rem;
     text-align: center;
-    // padding: 10rem 5rem 0.1rem;
-
-    // margin-left: 5rem;
     max-width: none;
     position: fixed;
     background-color: rgba(1, 1, 1, 0.6);
-
-    // padding-left: 5rem;
-    // padding-right: 5rem;
-    // margin-right: 1rem;
 
     .branding {
       display: flex;
