@@ -210,11 +210,22 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+@media (max-width: 768px) {
+  .produkKaos {
+    h1 {
+      font-size: 130%;
+      text-align: center;
+    }
+
+    .button {
+      flex-direction: column;
+      align-items: center;
+
+      .optionButton {
+        width: 25rem !important;
+        font-size: 75%;
+      }
+    }
   }
 }
 </style>
