@@ -177,6 +177,7 @@ body {
         font-size: 1.4rem;
         text-align: center;
         line-height: 1.3;
+        margin-top: 1rem;
       }
     }
   }

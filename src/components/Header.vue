@@ -1,5 +1,23 @@
 <script setup>
 import { RouterView } from "vue-router";
+import { ref, onMounted } from "vue";
+
+const isNavRoutesActive = ref(false);
+
+const toggleNavRoutes = () => {
+  isNavRoutesActive.value = !isNavRoutesActive.value;
+};
+
+onMounted(() => {
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+  const navbarNav = document.querySelector(".nav-routes");
+
+  document.addEventListener("click", (e) => {
+    if (!hamburgerMenu.contains(e.target) && !navbarNav.contains(e.target)) {
+      isNavRoutesActive.value = false;
+    }
+  });
+});
 </script>
 
 <template>
@@ -8,7 +26,7 @@ import { RouterView } from "vue-router";
       <div class="branding">
         <h1><span>H3S</span>SPORT<span>.</span></h1>
       </div>
-      <ul class="nav-routes">
+      <ul class="nav-routes" :class="{ active: isNavRoutesActive }">
         <RouterLink to="/">Beranda</RouterLink>
         <li class="dropdown">
           <a
@@ -38,7 +56,12 @@ import { RouterView } from "vue-router";
         <RouterLink to="/hubungi">Hubungi Kami</RouterLink>
       </ul>
       <div class="navbar-extra">
-        <vue-feather type="menu" class="menu"></vue-feather>
+        <vue-feather
+          id="hamburger-menu"
+          @click="toggleNavRoutes"
+          type="menu"
+          class="menu"
+        ></vue-feather>
       </div>
     </nav>
   </header>
@@ -47,7 +70,7 @@ import { RouterView } from "vue-router";
 <style lang="scss" scoped>
 header {
   // background-color: #f8f8f8;
-  background-color: rgba(1, 1, 1, 0.6);
+  // background-color: rgba(1, 1, 1, 0.6);
   // opacity: 0.6;
   position: fixed;
   z-index: 99;
@@ -66,6 +89,9 @@ header {
 
     // margin-left: 5rem;
     max-width: none;
+    position: fixed;
+    background-color: rgba(1, 1, 1, 0.6);
+
     // padding-left: 5rem;
     // padding-right: 5rem;
     // margin-right: 1rem;
@@ -143,8 +169,8 @@ header {
     }
     .navbar-extra .menu {
       color: #fff;
-      margin: 0 0.5rem;
-      margin-left: auto;
+      // margin: 0 0.5rem;
+      // margin-left: auto;
       display: none;
     }
   }
@@ -158,12 +184,46 @@ header {
       }
 
       .nav-routes {
+        flex-direction: column; // Change to column direction
+        align-items: flex-start;
+        position: absolute;
+        justify-content: flex-start;
+        top: 100%;
+        right: -100%;
+        background-color: hsla(223, 67%, 37%, 0.303);
+        width: 50%;
+        height: 100vh;
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        /*For Safar*/
+        transition: right 0.4s;
         a {
           font-size: 75%;
+          color: #fff;
+          display: block;
+          // margin-top: 0;
+          margin: 1.5rem;
+          padding: 0.5rem;
+        }
+
+        a::after {
+          transform-origin: 0 0;
+        }
+
+        a:hover::after {
+          transform: scaleX(0.2);
         }
       }
+
+      .nav-routes.active {
+        right: 0;
+      }
+
       .navbar-extra .menu {
-        display: block;
+        display: inline-block;
+        position: absolute;
+        top: 0.65rem;
+        right: 2rem;
       }
     }
   }
