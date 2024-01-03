@@ -62,6 +62,12 @@ import { RouterView } from "vue-router";
       </div>
     </section>
     <!-- Figure Section End -->
+    <section class="contact-info" id="contact-info">
+      <div class="content">
+        <h2>Bikin Baju Sekarang</h2>
+        <p>Hubungi kami dalam hitungan menit dan wujudkan produk impian.</p>
+      </div>
+    </section>
   </body>
 </template>
 
@@ -145,7 +151,7 @@ body {
 }
 
 .product-figure {
-  margin: 3rem 3rem;
+  margin: 0rem 2rem;
   padding: 3rem 2.5%;
   background-color: rgb(233, 233, 233);
   border-radius: 50px;
@@ -168,7 +174,7 @@ body {
       text-decoration: none;
       text-align: center;
       padding: 0rem 0rem;
-      width: 330px;
+      width: 350px;
       height: 400px;
 
       h3 {
@@ -181,6 +187,30 @@ body {
       }
     }
   }
+}
+
+.contact-info {
+  color: #fff;
+  margin: 3rem 2rem;
+  align-items: center;
+  background: linear-gradient(to right, rgb(52, 51, 51), #118fbd);
+  border-radius: 2.5rem;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.contact-info .content {
+  text-align: left;
+  padding: 5rem 7%;
+  max-width: 60rem;
 }
 
 @media (max-width: 768px) {
