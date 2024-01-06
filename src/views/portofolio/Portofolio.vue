@@ -1,219 +1,136 @@
-<script setup>
-import { RouterView } from "vue-router";
-</script>
-
 <template>
-  <body>
-    <section class="portofolio">
-      <h1>Portofolio</h1>
+  <div class="portfolio">
+    <h1>Portfolio</h1>
 
-      <div class="modelVar">
-        <h2>Kaos</h2>
-        <div class="type">
-          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
-            </SplideSlide>
-          </Splide>
-        </div>
-        <h2>Kemeja</h2>
-        <div class="type">
-          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
-            </SplideSlide>
-          </Splide>
-        </div>
-        <h2>Jaket</h2>
-        <div class="type">
-          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
-            </SplideSlide>
-          </Splide>
-        </div>
-        <h2>Poloshirt</h2>
-        <div class="type">
-          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
-            </SplideSlide>
-          </Splide>
-        </div>
-        <h2>Vest</h2>
-        <div class="type">
-          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
-            </SplideSlide>
-          </Splide>
-        </div>
-        <h2>Training</h2>
-        <div class="type">
-          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
-            </SplideSlide>
-          </Splide>
-        </div>
-        <h2>Apron</h2>
-        <div class="type">
-          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
-            </SplideSlide>
-          </Splide>
-        </div>
-        <h2>Tote Bag</h2>
-        <div class="type">
-          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
-            </SplideSlide>
-          </Splide>
+    <div class="collaborations">
+      <!-- Repeat for photos 1 to 20 -->
+      <!-- Photo 1 -->
+      <div class="collaboration-item">
+        <div class="image-container">
+          <img src="../../assets/produk/oneck.jpeg" alt="Title 1" />
+          <div class="title">Title 1</div>
         </div>
       </div>
-    </section>
-  </body>
+
+      <!-- Photo 2 -->
+      <div class="collaboration-item">
+        <div class="image-container">
+          <img src="../../assets/produk/oneck.jpeg" alt="Title 2" />
+          <div class="title">Title 2</div>
+        </div>
+      </div>
+      <div class="collaboration-item">
+        <div class="image-container">
+          <img src="../../assets/produk/oneck.jpeg" alt="Title 2" />
+          <div class="title">Title 2</div>
+        </div>
+      </div>
+      <div class="collaboration-item">
+        <div class="image-container">
+          <img src="../../assets/produk/oneck.jpeg" alt="Title 2" />
+          <div class="title">Title 2</div>
+        </div>
+      </div>
+      <div class="collaboration-item">
+        <div class="image-container">
+          <img src="../../assets/produk/oneck.jpeg" alt="Title 2" />
+          <div class="title">Title 2</div>
+        </div>
+      </div>
+      <div class="collaboration-item">
+        <div class="image-container">
+          <img src="../../assets/produk/oneck.jpeg" alt="Title 2" />
+          <div class="title">Title 2</div>
+        </div>
+      </div>
+      <div class="collaboration-item">
+        <div class="image-container">
+          <img src="../../assets/produk/oneck.jpeg" alt="Title 2" />
+          <div class="title">Title 2</div>
+        </div>
+      </div>
+
+      <!-- Repeat for photos 3 to 20 -->
+      <!-- ... -->
+
+    </div>
+  </div>
 </template>
 
 <style lang="scss">
-body {
+.portfolio {
   background-color: rgb(0, 0, 0);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
 
-}
-.portofolio {
   h1 {
-    margin-top: 6rem;
-    margin-bottom: 3rem;
     font-size: 1.75rem;
     font-weight: 600;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-    line-height: 1.3;
-  }
-
-  .button {
     margin-top: 1.5rem;
-    display: flex;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  }
+
+  .collaborations {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
     justify-content: center;
-    column-gap: 4rem;
-
-    .optionButton {
-      text-decoration: none;
-      margin-top: 1rem;
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      text-align: center;
-      width: 12rem;
-      font-size: 1rem;
-      color: #fff;
-      background-color: #118fbd;
-      border-radius: 3rem;
-      box-shadow: 1px 1px 3px, rgba(1, 1, 3, 0.5);
-    }
-  }
-
-  .modelVar {
-    h2 {
-      color: #118fbd;
-      font-size: 1.25rem;
-      font-weight: 600;
-      text-align: center; /* Jarak antara judul dan slider */
-
-      padding: 0.5rem 1rem;
-      text-align: center;
-      width: 12rem;
-      font-size: 1rem;
-      color: #fff;
-      background-color: #118fbd;
-      border-radius: 3rem;
-      box-shadow: 1px 1px 3px, rgba(1, 1, 3, 0.5);
-      margin: auto;
-    } /* Pusatkan elemen anak secara vertikal */
-    .type {
-      display: flex;
-      align-items: center;
-      margin-left: 0px;
-
-      h2 {
-        color: #118fbd;
-        font-size: 1.25rem;
-        font-weight: 600;
-        text-align: center; /* Jarak antara judul dan slider */
-      } /* Pusatkan elemen anak secara vertikal */
-    }
-    .splide {
-      width: 700px; /* Atur lebar maksimum sesuai kebutuhan */
-      margin-left: 7.5rem;
-      margin-right: 7.5rem;
-      margin: 2rem auto;
-      /* Pusatkan komponen Splide di tengah halaman */
-    }
-
-    .splide__slide {
-      display: flex;
-      justify-content: center;
-      /* Mengatur tampilan elemen-elemen dalam SplideSlide menjadi flex */
-    }
-    /* Gaya untuk elemen-elemen di dalam SplideSlide */
-    .splide__slide img {
-      width: 300px; /* Pastikan gambar mengisi lebar slide sepenuhnya */
-      height: auto; /* Biarkan tinggi otomatis untuk mempertahankan rasio aspek asli */
-      border-radius: 4px; /* Contoh penggunaan border-radius untuk sudut melengkung */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-left: 20px;
-      margin-right: 20px; /* Contoh bayangan untuk efek ketinggian */
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
     align-items: center;
+  }
+
+  .collaboration-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem;
+    position: relative;
+    /* Positioning for title overlay */
+    transition: transform 0.3s ease;
+    /* Smooth transition for zoom effect */
+  }
+
+  .collaboration-item:hover {
+    transform: scale(1.05);
+    /* Zoom in slightly on hover */
+  }
+
+  .image-container {
+    position: relative;
+  }
+
+  .collaboration-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    /* Smooth transition for zoom effect */
+  }
+
+  .collaboration-item:hover img {
+    transform: scale(1.2);
+    /* Zoom in more on hover */
+  }
+
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    .collaborations {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
   }
 }
 </style>

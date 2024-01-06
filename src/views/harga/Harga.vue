@@ -189,6 +189,7 @@ import { RouterView } from "vue-router";
 body {
   background-color: rgb(0, 0, 0);
 }
+
 .pricelist {
   h1 {
     margin-top: 6rem;
@@ -205,7 +206,7 @@ body {
     .type {
       height: 600px;
       // background-color: #0f3947;
-      background-color:  #127396;
+      background-color: #127396;
       border-radius: 5rem;
       display: flex;
       box-shadow: 1px 1px 3px, rgba(1, 1, 3, 0.5);
@@ -223,12 +224,14 @@ body {
           // display: block;
           max-width: 1000px;
           margin: 3rem 4rem;
+
           h1 {
             padding: 0px;
             margin: 0px 0px 0px 0px;
             color: #fdfdfd;
             text-align: left;
           }
+
           h3 {
             margin-top: 12px;
             color: #fdfdfd;
@@ -238,6 +241,7 @@ body {
         .bawah {
           display: flex;
           justify-content: center;
+
           .card {
             display: block;
             width: 17rem;
@@ -257,6 +261,7 @@ body {
             h3 {
               margin: 0.5rem 0rem;
             }
+
             span {
               font-weight: bold;
             }
@@ -277,5 +282,4 @@ body {
 //     display: flex;
 //     align-items: center;
 //   }
-// }
-</style>
+// }</style>
