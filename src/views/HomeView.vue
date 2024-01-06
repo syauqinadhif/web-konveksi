@@ -103,7 +103,7 @@ body {
       font-size: 1rem;
       margin-top: -0.5rem;
       line-height: 1.4;
-      font-weight: 300;
+      font-weight: 500;
       color: #fff;
       text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
       margin-bottom: 0.5rem;
@@ -217,15 +217,15 @@ body {
   .hero {
     .content {
       h1 {
-        font-size: 170%;
+        font-size: 190%;
       }
 
       p {
-        font-size: 90%;
+        font-size: 100%;
       }
 
       .cta {
-        font-size: 85%;
+        font-size: 90%;
       }
     }
   }
@@ -255,15 +255,15 @@ body {
   .hero {
     .content {
       h1 {
-        font-size: 140%;
+        font-size: 160%;
       }
 
       p {
-        font-size: 80%;
+        font-size: 100%;
       }
 
       .cta {
-        font-size: 75%;
+        font-size: 90%;
       }
     }
   }

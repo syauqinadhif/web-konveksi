@@ -1,221 +1,221 @@
 <script setup>
-import { RouterView } from "vue-router";
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref } from "vue";
 
-const isNavRoutesActive = ref(false);
+const isMenuActive = ref(false);
 
-const toggleNavRoutes = () => {
-  isNavRoutesActive.value = !isNavRoutesActive.value;
+const toggleMenu = () => {
+  isMenuActive.value = !isMenuActive.value;
 };
 
-onMounted(() => {
-  const hamburgerMenu = document.getElementById("hamburger-menu");
-  const navbarNav = document.querySelector(".nav-routes");
+const closeMenu = () => {
+  isMenuActive.value = false;
+};
 
-  document.addEventListener("click", (e) => {
-    if (!hamburgerMenu.contains(e.target) && !navbarNav.contains(e.target)) {
-      isNavRoutesActive.value = false;
-    }
-  });
+const toggleMenuHandler = (e) => {
+  if (!e.target.closest(".header")) {
+    closeMenu();
+  }
+};
+
+const closeMenuOnNavClick = () => {
+  closeMenu();
+};
+</script>
+
+<script>
+import { onMounted, onUnmounted } from "vue";
+
+onMounted(() => {
+  document.addEventListener("click", toggleMenuHandler);
+});
+
+onUnmounted(() => {
+  document.removeEventListener("click", toggleMenuHandler);
 });
 </script>
 
 <template>
-  <header>
-    <nav class="container">
-      <div class="branding">
-        <h1><span>H3S</span>SPORT<span>.</span></h1>
-      </div>
-      <ul class="nav-routes" :class="{ active: isNavRoutesActive }">
-        <RouterLink to="/">Beranda</RouterLink>
-        <li class="dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Produk
-          </a>
-          <div class="dropdown-content" aria-labelledby="navbarDropdown">
-            <router-link to="produkKaos" class="dropdown-item">Kaos</router-link>
-            <router-link to="produkJaket" class="dropdown-item">Jaket</router-link>
-            <router-link to="produkKemeja" class="dropdown-item">Kemeja</router-link>
-            <router-link to="produkPolo" class="dropdown-item">Polo</router-link>
-            <router-link to="produkVest" class="dropdown-item">Vest</router-link>
-            <router-link to="produkTraining" class="dropdown-item">Training</router-link>
-            <router-link to="produkApron" class="dropdown-item">Apron</router-link>
-            <router-link to="produkToteBag" class="dropdown-item">Tote Bag</router-link>
-          </div>
+  <header :class="{ active: isMenuActive }" class="header">
+    <a href="#" class="logo"><span>H3S</span>SPORT<span>.</span></a>
+    <div class="menuToggle" @click="toggleMenu"></div>
+    <nav>
+      <ul>
+        <li @click="closeMenuOnNavClick"><RouterLink to="/">Beranda</RouterLink></li>
+        <li>
+          <a href="#">Produk<b>&#9660;</b></a>
+          <ul>
+            <li @click="closeMenuOnNavClick"><a href="produkKaos">Kaos</a></li>
+            <li @click="closeMenuOnNavClick"><a href="produkJaket">Jaket</a></li>
+            <li @click="closeMenuOnNavClick"><a href="produkPolo">Kemeja</a></li>
+            <li @click="closeMenuOnNavClick"><a href="produkVest">Vest</a></li>
+            <li @click="closeMenuOnNavClick"><a href="produkTraining">Training</a></li>
+            <li @click="closeMenuOnNavClick"><a href="produkApron">Apron</a></li>
+            <li @click="closeMenuOnNavClick"><a href="produkToteBag">Totebag</a></li>
+          </ul>
         </li>
-        <RouterLink to="/portofolio">Portofolio</RouterLink>
-        <RouterLink to="/pricelist">Harga</RouterLink>
-        <RouterLink to="/hubungi">Hubungi Kami</RouterLink>
+
+        <li @click="closeMenuOnNavClick"><RouterLink to="/portofolio">Portofolio</RouterLink></li>
+        <li @click="closeMenuOnNavClick"><RouterLink to="/pricelist">Harga</RouterLink></li>
+        <li @click="closeMenuOnNavClick"><RouterLink to="/hubungi">Hubungi Kami</RouterLink></li>
       </ul>
-      <div class="navbar-extra">
-        <vue-feather
-          id="hamburger-menu"
-          @click="toggleNavRoutes"
-          type="menu"
-          class="menu"
-        ></vue-feather>
-      </div>
     </nav>
   </header>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 header {
-  // background-color: #f8f8f8;
-  // background-color: rgba(1, 1, 1, 0.6);
-  // opacity: 0.6;
   position: fixed;
-  z-index: 99;
+  width: 100%;
+  min-height: 66px;
+  background: rgba(1, 1, 1, 0.7);
+  z-index: 1000;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
 
-  // position:relative;
+header .logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  font-style: italic;
+  text-decoration: none;
+}
 
-  nav {
-    display: flex;
-    align-items: center;
-    padding: 0.75rem 3rem 0.1rem;
-    text-align: center;
-    max-width: none;
-    position: fixed;
-    background-color: rgba(1, 1, 1, 0.6);
+header .logo span {
+  color: #118fbd;
+}
 
-    .branding {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 0.5rem;
+header ul {
+  position: relative;
+}
 
-      h1 {
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: #fff;
-        font-style: italic;
-      }
-      span {
-        color: #118fbd;
-      }
-    }
+header ul li {
+  position: relative;
+  list-style: none;
+  float: left;
+}
 
-    .nav-routes {
-      display: flex;
-      flex: 1;
-      justify-content: flex-end;
-      gap: 5px;
-      list-style: none;
-      margin-bottom: 1rem;
-      a {
-        text-decoration: none;
-        // color: inherit;
-        font-size: 13px;
-        font-weight: 600;
-        color: #fff;
-        display: inline-block;
-        margin: 0 1rem;
-        margin-top: 3px;
-      }
+header ul li a {
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 20px 25px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
 
-      a:hover {
-        color: #118fbd;
-      }
+header ul li a:hover {
+  color: #118fbd;
+}
 
-      .dropdown {
-        display: inline-block;
-      }
+header nav ul li ul {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  text-decoration: none;
+  background: rgba(1, 1, 1, 0.7);
+  display: none;
 
-      .dropdown-content {
-        display: none;
-        position: fixed;
-        margin: 0rem -3rem;
-        background-color: rgba(1, 1, 1, 0.8);
-        min-width: 160px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      }
+  top: 100%;
+  left: 0;
+}
 
-      .dropdown-content a {
-        color: #fff;
-        padding: 12px;
-        // margin-right: 3rem;
-        margin-left: 3rem;
-        display: flex;
-        text-decoration: none;
-      }
+header ul li:hover ul {
+  display: block;
+}
 
-      .dropdown-content a:hover {
-        // background-color: #81c2e5;
-        color: #118fbd;
-      }
+header ul li ul li {
+  position: relative;
+  width: 100%;
+  // border: 1px solid rgba($color: #000000, $alpha: 0.2);
+}
 
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-    }
-    .navbar-extra .menu {
-      color: #fff;
-      // margin: 0 0.5rem;
-      // margin-left: auto;
-      display: none;
-    }
+//Responsive
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
   }
 
-  @media (max-width: 768px) {
-    nav {
-      .branding {
-        h1 {
-          font-size: 100%;
-        }
-      }
+  header nav {
+    position: absolute;
+    width: 100%;
+    top: 66px;
+    left: 0;
+    background: hsla(223, 67%, 37%, 0.303);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    height: 100vh;
+    display: none;
+  }
 
-      .nav-routes {
-        flex-direction: column; // Change to column direction
-        align-items: flex-start;
-        position: absolute;
-        justify-content: flex-start;
-        top: 100%;
-        right: -100%;
-        background-color: hsla(223, 67%, 37%, 0.303);
-        width: 50%;
-        height: 100vh;
-        backdrop-filter: blur(24px);
-        -webkit-backdrop-filter: blur(24px);
-        /*For Safar*/
-        transition: right 0.4s;
-        a {
-          font-size: 75%;
-          color: #fff;
-          display: block;
-          // margin-top: 0;
-          margin: 1.5rem;
-          padding: 0.5rem;
-        }
+  header.active nav {
+    display: flex;
+    flex-direction: column;
+  }
 
-        a::after {
-          transform-origin: 0 0;
-        }
+  header nav ul li {
+    width: 100%;
+  }
 
-        a:hover::after {
-          transform: scaleX(0.2);
-        }
-      }
+  header nav ul li ul {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
 
-      .nav-routes.active {
-        right: 0;
-      }
+  header ul li ul li ul {
+    top: 0;
+    left: 100%;
+  }
 
-      .navbar-extra .menu {
-        display: inline-block;
-        position: absolute;
-        top: 0.65rem;
-        right: 2rem;
-      }
-    }
+  // header nav ul li:hover ul li{
+  //   background: hsla(223, 66%, 52%, 0.303);
+  // }
+
+  .menuToggle {
+    position: relative;
+    width: 30px;
+    height: 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto; /* Add this line */
+  }
+
+  .menuToggle::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 3rem;
+    transform: translateY(-12px);
+    box-shadow: 0 12px #fff;
+    pointer-events: auto; /* Add this line */
+  }
+
+  .menuToggle::after {
+    content: " ";
+    border-radius: 3rem;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform: translateY(12px);
+    pointer-events: auto; /* Add this line */
+  }
+
+  header.active .menuToggle::before {
+    transform: rotate(45deg);
+    box-shadow: 0 0 #fff;
+  }
+  header.active .menuToggle::after {
+    transform: rotate(315deg);
   }
 }
 </style>
