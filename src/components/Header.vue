@@ -2,13 +2,19 @@
 import { ref } from "vue";
 
 const isMenuActive = ref(false);
+const isProductActive = ref(false);
 
 const toggleMenu = () => {
   isMenuActive.value = !isMenuActive.value;
 };
 
+const toggleProduct = () => {
+  isProductActive.value = !isProductActive.value;
+};
+
 const closeMenu = () => {
   isMenuActive.value = false;
+  isProductActive.value = false;
 };
 
 const toggleMenuHandler = (e) => {
@@ -20,18 +26,10 @@ const toggleMenuHandler = (e) => {
 const closeMenuOnNavClick = () => {
   closeMenu();
 };
-</script>
 
-<script>
-import { onMounted, onUnmounted } from "vue";
-
-onMounted(() => {
-  document.addEventListener("click", toggleMenuHandler);
-});
-
-onUnmounted(() => {
-  document.removeEventListener("click", toggleMenuHandler);
-});
+const bodyClick = () => {
+  closeMenu();
+};
 </script>
 
 <template>
@@ -42,8 +40,8 @@ onUnmounted(() => {
       <ul>
         <li @click="closeMenuOnNavClick"><RouterLink to="/">Beranda</RouterLink></li>
         <li>
-          <a href="#">Produk<b>&#9660;</b></a>
-          <ul>
+          <a href="#" @click.prevent.stop="toggleProduct">Produk<b>&#9660;</b></a>
+          <ul v-show="isProductActive">
             <li @click="closeMenuOnNavClick"><a href="produkKaos">Kaos</a></li>
             <li @click="closeMenuOnNavClick"><a href="produkJaket">Jaket</a></li>
             <li @click="closeMenuOnNavClick"><a href="produkPolo">Kemeja</a></li>
@@ -53,7 +51,6 @@ onUnmounted(() => {
             <li @click="closeMenuOnNavClick"><a href="produkToteBag">Totebag</a></li>
           </ul>
         </li>
-
         <li @click="closeMenuOnNavClick"><RouterLink to="/portofolio">Portofolio</RouterLink></li>
         <li @click="closeMenuOnNavClick"><RouterLink to="/pricelist">Harga</RouterLink></li>
         <li @click="closeMenuOnNavClick"><RouterLink to="/hubungi">Hubungi Kami</RouterLink></li>
