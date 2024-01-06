@@ -204,7 +204,7 @@ body {
 
   .modelVar {
     .type {
-      height: 600px;
+      // height: 600px;
       // background-color: #0f3947;
       background-color: #127396;
       border-radius: 5rem;
@@ -240,6 +240,7 @@ body {
 
         .bawah {
           display: flex;
+          flex-wrap: wrap;
           justify-content: center;
 
           .card {
@@ -250,6 +251,7 @@ body {
             // margin: 0 15px;
             align-items: center;
             margin: 0px 12px;
+            margin-bottom: 3rem;
             padding: 1.2rem 1.5rem;
 
             h1 {
@@ -282,4 +284,5 @@ body {
 //     display: flex;
 //     align-items: center;
 //   }
-// }</style>
+// }
+</style>
