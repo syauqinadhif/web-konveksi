@@ -14,8 +14,8 @@
           <h2>Neck/Rib Leher</h2>
           <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
             <SplideSlide>
-              <img src="../../assets/produk/hasninGulu.png" alt="Sample 1" />
-              <img src="../../assets/produk/kaos2.jpg" alt="Sample 2" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
             </SplideSlide>
             <SplideSlide>
               <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
@@ -52,16 +52,18 @@
       </div>
       <div class="jenisBahan" id="jenisBahan">
         <h1>Jenis Bahan</h1>
-        <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
-          <SplideSlide>
-            <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-            <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
-            <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
-          </SplideSlide>
-        </Splide>
+        <div class="type">
+          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
+            </SplideSlide>
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
+            </SplideSlide>
+          </Splide>
+        </div>
       </div>
     </section>
   </body>
@@ -71,6 +73,7 @@
 body {
   background-color: black;
 }
+
 .produkKaos {
   h1 {
     margin-top: 5rem;
@@ -115,9 +118,11 @@ body {
       text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
       line-height: 1.3;
     }
+
     .type {
       display: flex;
       align-items: center;
+      justify-content: center;
       margin-left: 175px;
       margin-right: 250px;
 
@@ -126,13 +131,18 @@ body {
         color: #118fbd;
         font-size: 1.25rem;
         font-weight: 600;
-        text-align: center; /* Jarak antara judul dan slider */
+        text-align: center;
+        /* Jarak antara judul dan slider */
         width: 153.86px;
-      } /* Pusatkan elemen anak secara vertikal */
+      }
+
+      /* Pusatkan elemen anak secara vertikal */
     }
+
     .splide {
       // width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
-      width: 700px; /* Atur lebar maksimum sesuai kebutuhan */
+      width: 700px;
+      /* Atur lebar maksimum sesuai kebutuhan */
       // height: 200px;
       margin-left: 7.5rem;
       margin-right: 7.5rem;
@@ -145,14 +155,19 @@ body {
       justify-content: center;
       /* Mengatur tampilan elemen-elemen dalam SplideSlide menjadi flex */
     }
+
     /* Gaya untuk elemen-elemen di dalam SplideSlide */
     .splide__slide img {
-      width: 300px; /* Pastikan gambar mengisi lebar slide sepenuhnya */
-      height: auto; /* Biarkan tinggi otomatis untuk mempertahankan rasio aspek asli */
-      border-radius: 4px; /* Contoh penggunaan border-radius untuk sudut melengkung */
+      width: 300px;
+      /* Pastikan gambar mengisi lebar slide sepenuhnya */
+      height: auto;
+      /* Biarkan tinggi otomatis untuk mempertahankan rasio aspek asli */
+      border-radius: 4px;
+      /* Contoh penggunaan border-radius untuk sudut melengkung */
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       margin-left: 20px;
-      margin-right: 20px; /* Contoh bayangan untuk efek ketinggian */
+      margin-right: 20px;
+      /* Contoh bayangan untuk efek ketinggian */
     }
   }
 
@@ -166,9 +181,11 @@ body {
       text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
       line-height: 1.3;
     }
+
     .splide {
       // width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
-      width: 800px; /* Atur lebar maksimum sesuai kebutuhan */
+      width: 800px;
+      /* Atur lebar maksimum sesuai kebutuhan */
       // height: 200px;
       margin-left: 7.5rem;
       margin-right: 7.5rem;
@@ -181,14 +198,19 @@ body {
       justify-content: center;
       /* Mengatur tampilan elemen-elemen dalam SplideSlide menjadi flex */
     }
+
     /* Gaya untuk elemen-elemen di dalam SplideSlide */
     .splide__slide img {
-      width: 800px; /* Pastikan gambar mengisi lebar slide sepenuhnya */
-      height: auto; /* Biarkan tinggi otomatis untuk mempertahankan rasio aspek asli */
-      border-radius: 4px; /* Contoh penggunaan border-radius untuk sudut melengkung */
+      width: 800px;
+      /* Pastikan gambar mengisi lebar slide sepenuhnya */
+      height: auto;
+      /* Biarkan tinggi otomatis untuk mempertahankan rasio aspek asli */
+      border-radius: 4px;
+      /* Contoh penggunaan border-radius untuk sudut melengkung */
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       margin-left: 20px;
-      margin-right: 20px; /* Contoh bayangan untuk efek ketinggian */
+      margin-right: 20px;
+      /* Contoh bayangan untuk efek ketinggian */
     }
   }
 }
@@ -207,6 +229,134 @@ body {
       .optionButton {
         width: 25rem !important;
         font-size: 75%;
+      }
+    }
+
+    .modelVar {
+      display: block;
+
+      h1 {
+        margin-top: 5rem;
+        font-size: 1.75rem;
+        font-weight: 600;
+        text-align: center;
+        color: #118fbd;
+        text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+        line-height: 1.3;
+      }
+
+      .type {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        // margin-left: 175px;
+        // margin-right: 250px;
+
+        h2 {
+          // display: block;
+          // margin-right: 20px;
+          color: #118fbd;
+          font-size: 1.25rem;
+          font-weight: 600;
+          text-align: center;
+          /* Jarak antara judul dan slider */
+          width: 153.86px;
+        }
+
+        /* Pusatkan elemen anak secara vertikal */
+      }
+
+      .splide {
+        // width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
+        width: 520px;
+        /* Atur lebar maksimum sesuai kebutuhan */
+        // height: 200px;
+        // margin-left: 7.5rem;
+        // margin-right: 7.5rem;
+        margin: 2rem auto;
+        /* Pusatkan komponen Splide di tengah halaman */
+      }
+
+      .splide__slide {
+        display: flex;
+        justify-content: center;
+        /* Mengatur tampilan elemen-elemen dalam SplideSlide menjadi flex */
+      }
+
+      /* Gaya untuk elemen-elemen di dalam SplideSlide */
+      .splide__slide img {
+        width: 200px;
+        /* Pastikan gambar mengisi lebar slide sepenuhnya */
+        height: auto;
+        /* Biarkan tinggi otomatis untuk mempertahankan rasio aspek asli */
+        border-radius: 4px;
+        /* Contoh penggunaan border-radius untuk sudut melengkung */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-left: 20px;
+        margin-right: 20px;
+        /* Contoh bayangan untuk efek ketinggian */
+      }
+    }
+
+    .jenisBahan {
+      margin: auto;
+      // width: 100%;
+      justify-content: center;
+      margin: auto;
+      align-items: center;
+
+      .type {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+        h1 {
+          margin-top: 5rem;
+          // margin: 5rem 0 auto;
+          font-size: 1.75rem;
+          font-weight: 600;
+          text-align: center;
+          color: #118fbd;
+          text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+          line-height: 1.3;
+        }
+
+        .splide {
+          // width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
+          // display: block;
+
+          width: 520px;
+          /* Atur lebar maksimum sesuai kebutuhan */
+          // height: 200px;
+          // margin-left: 7.5rem;
+          // margin-right: 7.5rem;
+          margin: 2rem auto;
+          /* Pusatkan komponen Splide di tengah halaman */
+        }
+
+        .splide__slide {
+          display: flex;
+          justify-content: center;
+          /* Mengatur tampilan elemen-elemen dalam SplideSlide menjadi flex */
+        }
+
+        /* Gaya untuk elemen-elemen di dalam SplideSlide */
+        .splide__slide img {
+          width: 200px;
+          /* Pastikan gambar mengisi lebar slide sepenuhnya */
+          height: auto;
+          /* Biarkan tinggi otomatis untuk mempertahankan rasio aspek asli */
+          border-radius: 4px;
+          /* Contoh penggunaan border-radius untuk sudut melengkung */
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          margin-left: 20px;
+          margin-right: 20px;
+          /* Contoh bayangan untuk efek ketinggian */
+        }
       }
     }
   }
