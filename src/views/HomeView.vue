@@ -26,38 +26,38 @@ import { RouterView } from "vue-router";
       <h2>Produk Terbaik Kami</h2>
       <div>
         <div class="row">
-          <a href="produkKaos" class="figure-card">
+          <RouterLink to="/produkKaos" class="figure-card">
             <img src="../assets/home/kaos.png" alt="kaos" />
             <h3>Kaos</h3>
-          </a>
-          <a href="produkJaket" class="figure-card">
+          </RouterLink>
+          <RouterLink to="/produkJaket" class="figure-card">
             <img src="../assets/home/jacket.png" alt="jacket" />
             <h3>Jacket</h3>
-          </a>
-          <a href="produkKemeja" class="figure-card">
+          </RouterLink>
+          <RouterLink to="/produkKemeja" class="figure-card">
             <img src="../assets/home/kemeja.png" alt="kemeja" />
             <h3>Kemeja</h3>
-          </a>
-          <a href="produkPolo" class="figure-card">
+          </RouterLink>
+          <RouterLink to="/produkPolo" class="figure-card">
             <img src="../assets/home/polo.png" alt="polo" />
             <h3>Polo</h3>
-          </a>
-          <a href="produkVest" class="figure-card">
+          </RouterLink>
+          <RouterLink to="/produkVest" class="figure-card">
             <img src="../assets/home/vest.png" alt="vest" />
             <h3>Vest</h3>
-          </a>
-          <a href="produkTraining" class="figure-card">
+          </RouterLink>
+          <RouterLink to="/produkTraining" class="figure-card">
             <img src="../assets/home/trining.png" alt="trining" />
             <h3>Training</h3>
-          </a>
-          <a href="produkApron" class="figure-card">
+          </RouterLink>
+          <RouterLink to="/produkApron" class="figure-card">
             <img src="../assets/home/apron.png" alt="apron" />
             <h3>Apron</h3>
-          </a>
-          <a href="produkToteBag" class="figure-card">
+          </RouterLink>
+          <RouterLink to="/produkToteBag" class="figure-card">
             <img src="../assets/home/totebag.png" alt="totebag" />
             <h3>Tote Bag</h3>
-          </a>
+          </RouterLink>
         </div>
       </div>
     </section>
@@ -73,7 +73,7 @@ import { RouterView } from "vue-router";
 
 <style lang="scss">
 body {
-  background-color: black !important;
+  background-color: rgb(0, 0, 0) !important;
 }
 
 .hero {
@@ -133,7 +133,6 @@ body {
 }
 
 .slogan {
-  background-color: black;
   padding: 5rem 7% 5rem;
 
   h1 {
@@ -155,6 +154,7 @@ body {
   padding: 3rem 2.5%;
   background-color: rgb(233, 233, 233);
   border-radius: 50px;
+  box-shadow: 1px 1px 3px, rgba(255, 255, 255, 5);
 
   h2 {
     color: black;

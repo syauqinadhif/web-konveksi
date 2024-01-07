@@ -14,8 +14,8 @@
           <h2>Neck/Rib Leher</h2>
           <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
             <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
+              <img src="../../assets/produk/hasninGulu.png" alt="Sample 1" />
+              <img src="../../assets/produk/kaos2.jpg" alt="Sample 2" />
             </SplideSlide>
             <SplideSlide>
               <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />

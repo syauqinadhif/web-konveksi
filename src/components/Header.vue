@@ -42,18 +42,41 @@ const bodyClick = () => {
         <li>
           <a href="#" @click.prevent.stop="toggleProduct">Produk<b>&#9660;</b></a>
           <ul v-show="isProductActive">
-            <li @click="closeMenuOnNavClick"><a href="produkKaos">Kaos</a></li>
-            <li @click="closeMenuOnNavClick"><a href="produkJaket">Jaket</a></li>
-            <li @click="closeMenuOnNavClick"><a href="produkPolo">Kemeja</a></li>
-            <li @click="closeMenuOnNavClick"><a href="produkVest">Vest</a></li>
-            <li @click="closeMenuOnNavClick"><a href="produkTraining">Training</a></li>
-            <li @click="closeMenuOnNavClick"><a href="produkApron">Apron</a></li>
-            <li @click="closeMenuOnNavClick"><a href="produkToteBag">Totebag</a></li>
+            <li @click="closeMenuOnNavClick">
+              <RouterLink to="/produkKaos">Kaos</RouterLink>
+            </li>
+            <li @click="closeMenuOnNavClick">
+              <RouterLink to="/produkJaket">Jaket</RouterLink>
+            </li>
+            <li @click="closeMenuOnNavClick">
+              <RouterLink to="/produkKemeja">Kemeja</RouterLink>
+            </li>
+            <li @click="closeMenuOnNavClick">
+              <RouterLink to="/produkPolo">Polo</RouterLink>
+            </li>
+            <li @click="closeMenuOnNavClick">
+              <RouterLink to="/produkVest">Vest</RouterLink>
+            </li>
+            <li @click="closeMenuOnNavClick">
+              <RouterLink to="/produkTraining">Training</RouterLink>
+            </li>
+            <li @click="closeMenuOnNavClick">
+              <RouterLink to="/produkApron">Apron</RouterLink>
+            </li>
+            <li @click="closeMenuOnNavClick">
+              <RouterLink to="/produkTotebag">ToteBag</RouterLink>
+            </li>
           </ul>
         </li>
-        <li @click="closeMenuOnNavClick"><RouterLink to="/portofolio">Portofolio</RouterLink></li>
-        <li @click="closeMenuOnNavClick"><RouterLink to="/pricelist">Harga</RouterLink></li>
-        <li @click="closeMenuOnNavClick"><RouterLink to="/hubungi">Hubungi Kami</RouterLink></li>
+        <li @click="closeMenuOnNavClick">
+          <RouterLink to="/portofolio">Portofolio</RouterLink>
+        </li>
+        <li @click="closeMenuOnNavClick">
+          <RouterLink to="/pricelist">Harga</RouterLink>
+        </li>
+        <li @click="closeMenuOnNavClick">
+          <RouterLink to="/hubungi">Hubungi Kami</RouterLink>
+        </li>
       </ul>
     </nav>
   </header>
