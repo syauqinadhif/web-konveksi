@@ -9,7 +9,7 @@ import { RouterView } from "vue-router";
       <main class="content">
         <h1>Dapatkan seragam terbaik, Penuhi kebutuhan Anda.</h1>
         <p>Nikmati pelayanan & hasil produksi berkualitas dari H3SSPORT Konveksi.</p>
-        <a href="#" class="cta">Ayo Buat Sekarang!</a>
+        <a href="https://wa.me/6281333779776" class="cta">Ayo Buat Sekarang!</a>
       </main>
     </section>
     <!-- Hero End -->
@@ -152,9 +152,10 @@ body {
 .product-figure {
   margin: 0rem 2rem;
   padding: 3rem 2.5%;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(255, 255, 255);
   border-radius: 50px;
-  box-shadow: 1px 1px 3px, rgba(255, 255, 255, 5);
+  // box-shadow: 1px 1px 3px, rgba(255, 255, 255, 5);
+  box-shadow: 10px 10px 100px #888888;
 
   h2 {
     color: black;
@@ -249,6 +250,15 @@ body {
       }
     }
   }
+
+  .contact-info {
+    .content {
+      h2,
+      p {
+        font-size: 100%;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -284,6 +294,15 @@ body {
         h3 {
           font-size: 110%;
         }
+      }
+    }
+  }
+
+  .contact-info {
+    .content {
+      h2,
+      p {
+        font-size: 90%;
       }
     }
   }

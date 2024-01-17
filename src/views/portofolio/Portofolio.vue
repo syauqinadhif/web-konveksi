@@ -12,12 +12,12 @@ import { RouterView } from "vue-router";
         <div class="type">
           <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
             <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
+              <img src="../../assets/produk/4.png" alt="Sample 1" />
+              <img src="../../assets/produk/6.png" alt="Sample 2" />
             </SplideSlide>
             <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
+              <img src="../../assets/produk/2.png" alt="Sample 3" />
+              <img src="../../assets/produk/7.png" alt="Sample 4" />
             </SplideSlide>
           </Splide>
         </div>
@@ -25,12 +25,12 @@ import { RouterView } from "vue-router";
         <div class="type">
           <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
             <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
+              <img src="../../assets/produk/1.png" alt="Sample 1" />
+              <img src="../../assets/produk/20.png" alt="Sample 2" />
             </SplideSlide>
             <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
+              <img src="../../assets/produk/16.png" alt="Sample 3" />
+              <img src="../../assets/produk/20.png" alt="Sample 4" />
             </SplideSlide>
           </Splide>
         </div>
@@ -51,12 +51,12 @@ import { RouterView } from "vue-router";
         <div class="type">
           <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
             <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
+              <img src="../../assets/produk/14.png" alt="Sample 1" />
+              <img src="../../assets/produk/5.png" alt="Sample 2" />
             </SplideSlide>
             <SplideSlide>
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
-              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
+              <img src="../../assets/produk/17.png" alt="Sample 3" />
+              <img src="../../assets/produk/23.png" alt="Sample 4" />
             </SplideSlide>
           </Splide>
         </div>
@@ -120,7 +120,6 @@ import { RouterView } from "vue-router";
 <style lang="scss">
 body {
   background-color: rgb(0, 0, 0);
-
 }
 .portofolio {
   h1 {
