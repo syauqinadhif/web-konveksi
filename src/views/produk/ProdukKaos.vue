@@ -53,7 +53,6 @@
       <div class="jenisBahan" id="jenisBahan">
         <h1>Jenis Bahan</h1>
         <div class="type">
-
           <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
             <SplideSlide>
               <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
