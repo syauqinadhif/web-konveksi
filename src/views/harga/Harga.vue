@@ -278,11 +278,46 @@ body {
   }
 }
 
-// @media (min-width: 1024px) {
-//   .about {
-//     min-height: 100vh;
-//     display: flex;
-//     align-items: center;
-//   }
-// }
+@media (max-width: 768px) {
+  .pricelist {
+    .modelVar {
+      .type {
+        margin: 1rem !important;
+        height: 1050px;
+
+        h1 {
+          font-size: 140%;
+        }
+
+        h3 {
+          font-size: 130%;
+        }
+
+        .content {
+          .bawah {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            .card {
+              height: 15rem;
+
+              h1 {
+                font-size: 120%;
+              }
+
+              h3 {
+                font-size: 100%;
+              }
+
+              ul {
+                font-size: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>

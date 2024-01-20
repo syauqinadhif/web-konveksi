@@ -1,3 +1,7 @@
+<script setup>
+import { RouterView } from "vue-router";
+</script>
+
 <template>
   <footer>
     <div class="container">
@@ -9,15 +13,15 @@
           <div class="footer-contact">
             <div class="contact-item">
               <vue-feather type="phone" class="icon"></vue-feather>
-              <span>+123456789</span>
+              <span>+6281333779776</span>
             </div>
             <div class="contact-item">
               <vue-feather type="mail" class="icon"></vue-feather>
-              <span>info@example.com</span>
+              <span>maulanahasnin@gmail.com</span>
             </div>
             <div class="contact-item">
               <vue-feather type="map-pin" class="icon"></vue-feather>
-              <span>Jl. Contoh No. 123, Kota Anda</span>
+              <span>Jl. Letda Suradji No 73 Ledok Kulon, Bojonegoro</span>
             </div>
           </div>
         </div>
@@ -26,7 +30,11 @@
             <!-- Replace the following URL with your Google Maps embed URL -->
             <iframe
               src="https://www.google.com/maps/embed?@-7.7825723,110.3985207,17z/data=!3m1!4b1!4m6!3m5!1s0x2e7a59c2bc1c6023:0x1ce91a3c5aa8b3bc!8m2!3d-7.7825776!4d110.4010956!16s%2Fm%2F0vsjsln?entry=ttu"
-              max-width="300" height="300" style="border: 0" loading="lazy"></iframe>
+              max-width="300"
+              height="300"
+              style="border: 0"
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -120,10 +128,8 @@ footer {
       }
 
       .right {
-
         // padding: 0 10px;
         .footer-map {
-
           // flex: 1;
           iframe {
             border: none;
@@ -148,7 +154,6 @@ footer {
         padding: 1rem;
         margin: 0rem 0;
       }
-
 
       .left {
         margin-left: 2rem;
@@ -222,10 +227,8 @@ footer {
         }
 
         .right {
-
           // padding: 0 10px;
           .footer-map {
-
             // flex: 1;
             iframe {
               border: none;
@@ -326,10 +329,8 @@ footer {
         }
 
         .right {
-
           // padding: 0 10px;
           .footer-map {
-
             // flex: 1;
             iframe {
               border: none;
@@ -428,10 +429,8 @@ footer {
         }
 
         .right {
-
           // padding: 0 10px;
           .footer-map {
-
             // flex: 1;
             iframe {
               border: none;

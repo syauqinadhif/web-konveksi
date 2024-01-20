@@ -2,6 +2,7 @@
   <div class="portfolio">
     <h1>Portfolio</h1>
 
+<<<<<<< HEAD
     <div class="collaborations">
       <!-- Repeat for photos 1 to 20 -->
       <!-- Photo 1 -->
@@ -9,6 +10,112 @@
         <div class="image-container">
           <img src="../../assets/produk/oneck.jpeg" alt="Title 1" />
           <div class="title">Title 1</div>
+=======
+      <div class="modelVar">
+        <h2>Kaos</h2>
+        <div class="type">
+          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+            <SplideSlide>
+              <img src="../../assets/produk/4.png" alt="Sample 1" />
+              <img src="../../assets/produk/6.png" alt="Sample 2" />
+            </SplideSlide>
+            <SplideSlide>
+              <img src="../../assets/produk/2.png" alt="Sample 3" />
+              <img src="../../assets/produk/7.png" alt="Sample 4" />
+            </SplideSlide>
+          </Splide>
+        </div>
+        <h2>Kemeja</h2>
+        <div class="type">
+          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+            <SplideSlide>
+              <img src="../../assets/produk/1.png" alt="Sample 1" />
+              <img src="../../assets/produk/20.png" alt="Sample 2" />
+            </SplideSlide>
+            <SplideSlide>
+              <img src="../../assets/produk/16.png" alt="Sample 3" />
+              <img src="../../assets/produk/20.png" alt="Sample 4" />
+            </SplideSlide>
+          </Splide>
+        </div>
+        <h2>Jaket</h2>
+        <div class="type">
+          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
+            </SplideSlide>
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
+            </SplideSlide>
+          </Splide>
+        </div>
+        <h2>Poloshirt</h2>
+        <div class="type">
+          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+            <SplideSlide>
+              <img src="../../assets/produk/14.png" alt="Sample 1" />
+              <img src="../../assets/produk/5.png" alt="Sample 2" />
+            </SplideSlide>
+            <SplideSlide>
+              <img src="../../assets/produk/17.png" alt="Sample 3" />
+              <img src="../../assets/produk/23.png" alt="Sample 4" />
+            </SplideSlide>
+          </Splide>
+        </div>
+        <h2>Vest</h2>
+        <div class="type">
+          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
+            </SplideSlide>
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
+            </SplideSlide>
+          </Splide>
+        </div>
+        <h2>Training</h2>
+        <div class="type">
+          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
+            </SplideSlide>
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
+            </SplideSlide>
+          </Splide>
+        </div>
+        <h2>Apron</h2>
+        <div class="type">
+          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
+            </SplideSlide>
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
+            </SplideSlide>
+          </Splide>
+        </div>
+        <h2>Tote Bag</h2>
+        <div class="type">
+          <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 1" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 2" />
+            </SplideSlide>
+            <SplideSlide>
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 3" />
+              <img src="../../assets/produk/oneck.jpeg" alt="Sample 4" />
+            </SplideSlide>
+          </Splide>
+>>>>>>> 780b8b3214c7e5b475386baa3b727fa0d60133c6
         </div>
       </div>
 
@@ -60,10 +167,15 @@
 <style lang="scss">
 .portfolio {
   background-color: rgb(0, 0, 0);
+<<<<<<< HEAD
   color: #fff;
   padding: 2rem;
   text-align: center;
 
+=======
+}
+.portofolio {
+>>>>>>> 780b8b3214c7e5b475386baa3b727fa0d60133c6
   h1 {
     font-size: 1.75rem;
     font-weight: 600;
